@@ -10,5 +10,5 @@ curl    -X POST \
         -u admin:admin123 \
         --header "Content-Type: text/plain" \
         -d '{"repo":"$REPO_NAME"}' \
-        "http://localhost:8081/service/siesta/rest/v1/script/deleteRepo/run"
+        "$NEXUS_API/deleteRepo/run"
 echo
